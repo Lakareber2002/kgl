@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="sales.css">
+</head>
+<body>
+    <style>
+        body {
+          background-image: url('AdobeStock_729554422_Preview.jpeg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+        }
+      </style><br>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid bg-primary-subtle">
+          <a class="navbar-brand" href="dashboard.html">
+            <img src="pl.png" alt="" width="70" height="70" class="d-inline-block align-text-top">
+           
+          </a>
+        </div>
+      </nav><br><br><br>
+
+    <div class="container">
+        <h1>Sales Records</h1>
+        <div class="form-group">
+            <input type="text" id="produceName" placeholder="Produce Name">
+            <input type="text" id="produceQuantity" placeholder="Produce Quantity">
+            <input type="text" id="producePrice" placeholder="Produce Price">
+            <input type="date" id="produceDate">
+            <input type="number" id="produceProgress" placeholder="Progress (0-100)" min="0" max="100">
+            <button onclick="addProduce()">Add Sales</button>
+        </div>
+        <ul id="produceList"></ul>
+    </div>
+    <script src="sales.js"></script>
+</body>
+</html>

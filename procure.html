@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procurement</title>
+    <link rel="stylesheet" href="sales.css">
+</head>
+<body>
+    <style>
+        body {
+          background-image: url('AdobeStock_729554422_Preview.jpeg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+        }
+      </style><br>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid bg-primary-subtle">
+          <a class="navbar-brand" href="dashboard.html">
+            <img src="pl.png" alt="" width="70" height="70" class="d-inline-block align-text-top">
+          Manager
+          </a>
+        </div>
+      </nav><br><br><br>
+
+    <div class="container">
+        <h1>Procurement</h1>
+        <div class="form-group">
+            <input type="text" id="produceName" placeholder="Produce Name">
+            <input type="text" id="produceQuantity" placeholder="Produce Quantity">
+            <input type="text" id="producePrice" placeholder="Produce Price">
+            <input type="date" id="produceDate">
+            <input type="text" id="produceSupplier" placeholder="Produce supplier">
+            <button onclick="addProduce()">Add Produce</button>
+        </div>
+        <ul id="produceList"></ul>
+    </div>
+    <script src="procure.js"></script>
+</body>
+</html>

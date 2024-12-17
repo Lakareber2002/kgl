@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<style>
+    body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+#form{
+    margin: 20px auto;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgba(108, 205, 239, 0.4); /* Semi-transparent background color */
+    backdrop-filter: blur(10px); /* Blurry effect */
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-align: left;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+   height: 50vh;
+    width: 150%;
+    overflow: hidden;
+    display: block;
+}  
+button{
+    font-size: medium;
+    width: 80px;
+    height: 30px;
+    border-radius: 25px;
+    border: none;
+    background-color: rgb(142, 192, 216);
+} 
+   
+body {
+          background-image: url('AdobeStock_729554422_Preview.jpeg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+          margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+        }
+   
+
+</style>
+<body>
+   
+    
+<div class="container">
+    <form id="form" class="form">
+        <h2>Login</h2><br>
+        <div class="form-control">
+            <label for="username">Name</label>
+            <input type="text" id="name" placeholder="Enter username"/>
+            <span style="color: red;" id="name_error"></span>
+            
+        </div><br>
+        <div class="form-control">
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Enter email"/>
+
+ </div><br>
+        
+ <div class="form-control">
+    <label for="password">Password</label>
+    <input type="password" id="password" placeholder="Enter password"/>
+    <span style="color: red;" id="password_error"></span>
+ </div>
+<br>
+ <button type="submit">submit</button>
+ <div class="account">
+    <p class="small mb-0">Don't have account? <a href="./reg.html">create an account</a></p>
+
+ </div>
+    </form>
+</div>
+  <script src="login.js"></script>  
+
+</body>
+</html>

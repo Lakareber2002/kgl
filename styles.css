@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    
+}
+.stats-container{
+    padding: 20px;
+    border-radius: 200px;
+    border: 2px solid rgb(13, 174, 243);
+    display: flex;
+    width: 70%;
+}
+.details{
+    width: 100%;
+}
+#progress{
+    width: 50%;
+    height: 10px;
+    background-color:aqua;
+    border-radius: 10px;
+    transition: all 0.3s ease ;
+}
+#progressBar{
+    width: 100%;
+    height: 10px;
+    background-color: rgb(210, 214, 216);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+form{
+    margin-top: 10px;
+    width: 70%;
+    display: flex;
+    gap: 5px;
+}
+input{
+    flex: 1;
+    padding: 8px;
+    background: rgb(207, 247, 247);
+    border-radius: 10px;
+    outline: none;
+}
+button{
+    padding: 10px; 
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;background-color: rgb(114, 198, 246);
+    font-size: 30px;
+    font-weight: bold;
+    outline: none;
+}
+.task-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    width: 70%;
+    list-style: none;
+}
+.taskItem{
+    width: 70%;
+     display: flex;
+     background-color: rgb(137, 217, 230);
+     padding: 10px;
+     border-radius: 10px;
+     justify-content: space-between;
+     align-items: center;
+}
+.task{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.task input{
+    width: 20px;
+    height: 20px;
+}
+.task.completed{
+    text-decoration: line-through;
+    color: aqua;
+}
+.taskItem img{
+    width:20px ;
+    height: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+
+
